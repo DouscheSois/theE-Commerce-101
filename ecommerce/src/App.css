@@ -34,6 +34,15 @@
   background-color: white;
   font-size: 1.5rem;
   text-align: center;
+  padding: 4rem;
+}
+
+.landing-page-desc-1 {
+  margin: 0;
+  background-color: red;
+  opacity: 0.8;
+  font-size: 1.5rem;
+  text-align: center;
   padding: 2rem;
 }
 
@@ -44,12 +53,31 @@
   margin: 1.5rem;
 }
 
+.plus-card {
+  position: relative;
+  text-align: center;
+  margin: 1rem;
+  background-color: #00adb5;
+  width: 23.54rem;
+}
+
+.add {
+  position: relative;
+  top: 50%;
+  transform: translate(-0%, -50%);
+}
+
 .animal-card {
   text-align: center;
   margin: 0.2rem;
   border: 1px solid black;
-  background-color: beige;
+  background-color: #393e46;
+  color: #fff;
   width: 25rem;
+}
+
+.animal-card p {
+  padding: 0.5rem;
 }
 
 .add-animal {
@@ -58,8 +86,17 @@
   background-color: white;
   border: none;
   border-radius: 5rem;
+  margin-bottom: 0.5rem;
 }
 
 .add-animal:hover {
-  background-color: blue;
+  background-color: beige;
+}
+
+.load-more {
+  border-radius: 20rem;
+}
+
+.load-more img {
+  margin-top: 0.2rem;
 }

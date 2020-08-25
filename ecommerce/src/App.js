@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import About from "./components/About";
+import Footnote from "./components/Footnote";
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ const App = () => {
             <Route exact path="/about" component={About} />
           </Switch>
         </section>
+        <Footnote />
       </Router>
     </Fragment>
   );

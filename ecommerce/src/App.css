@@ -5,14 +5,14 @@
   text-align: right;
 }
 
-.links {
+.nav-links {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
   padding: 2rem;
 }
 
-.links:hover {
+.nav-links:hover {
   background-color: white;
   color: black;
 }
@@ -24,7 +24,7 @@
 
 .landing-page-title {
   margin: 0;
-  padding: 1.5rem;
+  padding: 2.5rem;
   font-size: 2rem;
   text-align: center;
 }
@@ -118,6 +118,8 @@
 
 /* About CSS*/
 .about-page {
+  background-color: #00adb5;
+  padding: 1rem;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
@@ -176,10 +178,26 @@
   height: 12rem;
 }
 
-@media (max-width: 900px) {
+/* Footnote */
+.footnote {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  padding: 2rem;
+}
+
+.footnote .links img {
+  margin-top: 0.7rem;
+}
+
+@media (max-width: 1000px) {
   .about-page {
     width: 100%;
     margin-left: 0;
     margin-left: 0;
+    padding: 0;
   }
 }

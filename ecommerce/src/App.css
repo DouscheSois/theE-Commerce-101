@@ -32,7 +32,7 @@
 .landing-page-desc {
   margin: 0;
   background-color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   padding: 4rem;
 }
@@ -76,8 +76,14 @@
   width: 25rem;
 }
 
+.animal-card .animal {
+  width: 20rem;
+  height: 20rem;
+}
+
 .animal-card p {
   padding: 0.5rem;
+  font-size: 1.3rem;
 }
 
 .add-animal {
@@ -93,10 +99,87 @@
   background-color: beige;
 }
 
+.price {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
 .load-more {
   border-radius: 20rem;
 }
 
 .load-more img {
   margin-top: 0.2rem;
+}
+
+/* About CSS*/
+.about-page {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.about-page-title {
+  margin: 0;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-page-title-two {
+  background-color: beige;
+  margin: 0;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.person-card {
+  border: 1px solid black;
+  margin: 0.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.person-card-desc {
+  margin: 0;
+  background-color: #393e46;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 4rem;
+}
+
+.person-card img {
+  width: 12rem;
+  height: 12rem;
+}
+
+.person-card-box {
+  padding: 1rem;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team img {
+  width: 12rem;
+  height: 12rem;
+}
+
+@media (max-width: 900px) {
+  .about-page {
+    width: 100%;
+    margin-left: 0;
+    margin-left: 0;
+  }
 }

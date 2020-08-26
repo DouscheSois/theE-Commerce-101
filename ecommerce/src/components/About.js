@@ -81,7 +81,7 @@ const About = () => {
           Hi I'm Tim and I am new recruit here at Animal & Animal First. My
           grandpa used to take me duck hunting when I was a little kid. He was
           very good and taught me the basics of hunting animals. I grew a
-          passion for hunting but when I entered college my mind changed.
+          passion for hunting but when I entered college my mindset changed.
           Instead of hunting animals I now wanted to learn more about their
           anatomy. This led me to become a veterinarian and it's been a great
           ride so far.

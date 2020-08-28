@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { StoreContext } from "../contextAPI/store";
+import { StoreContext } from "../../contextAPI/Store";
 import ShoppingCartAnimalCard from "./ShoppingCartAnimalCard";
 
 const ShoppingCart = () => {
@@ -12,13 +12,7 @@ const ShoppingCart = () => {
       <h1 className="shopping-cart-page-title">Shopping Cart</h1>
       <div className="basket">
         {cart.map((animal) => (
-          <ShoppingCartAnimalCard
-            key={animal.id}
-            name={animal.name}
-            price={animal.price}
-            desc={animal.desc}
-            img={animal.img}
-          />
+          <ShoppingCartAnimalCard key={animal.key} animal={animal} />
         ))}
       </div>
       <h1 className="total-price">Total: ${totalPrice}</h1>

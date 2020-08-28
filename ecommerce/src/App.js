@@ -2,12 +2,12 @@ import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Landing from "./components/Landing";
-import About from "./components/About";
-import ShoppingCart from "./components/ShoppingCart";
+import Landing from "./components/landing/Landing";
+import About from "./components/about/About";
+import ShoppingCart from "./components//cart/ShoppingCart";
 import Footnote from "./components/Footnote";
 
-import { StoreProvider } from "./contextAPI/store";
+import { StoreProvider } from "./contextAPI/Store";
 
 import "./App.css";
 

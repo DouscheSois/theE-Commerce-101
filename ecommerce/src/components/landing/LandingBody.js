@@ -2,19 +2,23 @@ import React from "react";
 
 import { AnimalCard } from "./AnimalCard";
 
-import Bear from "../images/bear.jpg";
-import Kangaroo from "../images/kangaroo.png";
-import Jaguar from "../images/jaguar.jpg";
-import Cow from "../images/cow.png";
-import Koala from "../images/koala.png";
-import Rabbit from "../images/rabbit.jpg";
-import Llama from "../images/llama.png";
-import Whale from "../images/whale.jpg";
-import Cheetah from "../images/cheetah.jpg";
-import Dog from "../images/dog.jpg";
-import Zebra from "../images/zebra.jpg";
+import Bear from "../../images/bear.jpg";
+import Kangaroo from "../../images/kangaroo.png";
+import Jaguar from "../../images/jaguar.jpg";
+import Cow from "../../images/cow.png";
+import Koala from "../../images/koala.png";
+import Rabbit from "../../images/rabbit.jpg";
+import Llama from "../../images/llama.png";
+import Whale from "../../images/whale.jpg";
+import Cheetah from "../../images/cheetah.jpg";
+import Dog from "../../images/dog.jpg";
+import Zebra from "../../images/zebra.jpg";
 
 const LandingBody = () => {
+  const newID = () => {
+    return Math.floor(Math.random() * 1000000030);
+  };
+
   const animalDatabase = [
     {
       id: 1,
@@ -110,13 +114,7 @@ const LandingBody = () => {
     <div className="landing-body">
       <div className="animal-cards">
         {animalDatabase.map((animal) => (
-          <AnimalCard
-            key={animal.id}
-            name={animal.name}
-            price={animal.price}
-            desc={animal.desc}
-            img={animal.img}
-          />
+          <AnimalCard key={animal.id} animal={animal} />
         ))}
       </div>
     </div>

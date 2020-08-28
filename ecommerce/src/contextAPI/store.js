@@ -1,6 +1,11 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
+import Reducer from "./Reducer";
 
-export const StoreContext = React.createContext();
+const initialState = {
+  cart: [],
+};
+
+export const StoreContext = createContext(initialState);
 
 export const StoreProvider = ({ children }) => {
   const [cart, setCart] = useState([]);

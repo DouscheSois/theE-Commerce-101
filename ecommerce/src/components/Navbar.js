@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import { StoreContext } from "../contextAPI/store";
+import { StoreContext } from "../contextAPI/Store";
 
 const Navbar = () => {
   const [cart, setCart] = useContext(StoreContext);

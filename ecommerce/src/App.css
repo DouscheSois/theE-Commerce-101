@@ -91,6 +91,10 @@
   margin-bottom: 0.5rem;
 }
 
+.add-animal:disabled {
+  visibility: hidden;
+}
+
 .add-animal:hover {
   background-color: beige;
 }

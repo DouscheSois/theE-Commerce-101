@@ -1,18 +1,18 @@
 import React from "react";
 
-import Ceo from "../images/ceo.jpg";
-import ChiefVet from "../images/chiefvet.jpg";
-import VetOne from "../images/vet1.jpg";
-import VetTwo from "../images/vet2.jpg";
-import VetThree from "../images/vet3.jpg";
-import CaregiverOne from "../images/caregiver1.jpg";
-import CaregiverTwo from "../images/caregiver2.jpg";
-import CaregiverThree from "../images/caregiver3.jpg";
-import CaregiverFour from "../images/caregiver4.jpg";
-import CaregiverFive from "../images/caregiver5.jpg";
-import CaregiverSix from "../images/caregiver6.jpg";
-import CaregiverSeven from "../images/caregiver7.jpg";
-import CaregiverEight from "../images/caregiver8.jpg";
+import Ceo from "../../images/ceo.jpg";
+import ChiefVet from "../../images/chiefvet.jpg";
+import VetOne from "../../images/vet1.jpg";
+import VetTwo from "../../images/vet2.jpg";
+import VetThree from "../../images/vet3.jpg";
+import CaregiverOne from "../../images/caregiver1.jpg";
+import CaregiverTwo from "../../images/caregiver2.jpg";
+import CaregiverThree from "../../images/caregiver3.jpg";
+import CaregiverFour from "../../images/caregiver4.jpg";
+import CaregiverFive from "../../images/caregiver5.jpg";
+import CaregiverSix from "../../images/caregiver6.jpg";
+import CaregiverSeven from "../../images/caregiver7.jpg";
+import CaregiverEight from "../../images/caregiver8.jpg";
 
 const About = () => {
   return (

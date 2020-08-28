@@ -8,14 +8,15 @@ export const AnimalCard = (animal) => {
   const [cart, setCart] = useContext(StoreContext);
 
   const addToCart = () => {
-    const pet = {
+    const cart = {
+      key: animal.id,
       name: animal.name,
       price: animal.price,
       desc: animal.desc,
       img: animal.img,
     };
-    setCart((state) => [...state, pet]);
-    console.log("added");
+    setCart((state) => [...state, cart]);
+    console.log(cart);
   };
 
   return (

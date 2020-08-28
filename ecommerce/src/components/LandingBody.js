@@ -111,11 +111,11 @@ const LandingBody = () => {
       <div className="animal-cards">
         {animalDatabase.map((animal) => (
           <AnimalCard
+            key={animal.id}
             name={animal.name}
             price={animal.price}
             desc={animal.desc}
             img={animal.img}
-            key={animal.id}
           />
         ))}
       </div>

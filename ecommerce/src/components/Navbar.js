@@ -14,7 +14,7 @@ const Navbar = () => {
         <i className="fas fa-users"></i> Team
       </Link>
       <Link className="nav-links" to="/shopping-cart">
-        <i className="fas fa-shopping-cart"></i> Cart({cart.length})
+        <i className="fas fa-shopping-cart"></i> Cart ({cart.length})
       </Link>
     </div>
   );

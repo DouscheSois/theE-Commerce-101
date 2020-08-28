@@ -19,6 +19,11 @@ const About = () => {
     <div className="about-page">
       <h1 className="about-page-title">Abous Us</h1>
       <div className="person-card">
+        <div className="person-card-box">
+          <img src={Ceo} alt="ceo" />
+          <br />
+          <small>Founder and CEO</small>
+        </div>
         <p className="person-card-desc">
           Hi, I'm Mark and I love animals. I decided to start this business to
           help spread the word about animals. Technology has advanced rapidly in
@@ -27,11 +32,6 @@ const About = () => {
           lion or tiger. Our number one priority is to help maintain and/or
           increase the population of dying species.
         </p>
-        <div className="person-card-box">
-          <img src={Ceo} alt="ceo" />
-          <br />
-          <small>Founder and CEO</small>
-        </div>
       </div>
       <div className="person-card">
         <div className="person-card-box">
@@ -48,6 +48,11 @@ const About = () => {
         </p>
       </div>
       <div className="person-card">
+        <div className="person-card-box">
+          <img src={VetOne} alt="vetone" />
+          <br />
+          <small>Veterinarian</small>
+        </div>
         <p className="person-card-desc">
           Hi I'm Amanda and I have always enjoyed visiting my grandparents house
           because they had 3 lovely dogs and I would play with them everytime I
@@ -55,11 +60,6 @@ const About = () => {
           terrible accident and all three dogs died. I cried for months and
           swore I would always strive to help others in need.
         </p>
-        <div className="person-card-box">
-          <img src={VetOne} alt="vetone" />
-          <br />
-          <small>Veterinarian</small>
-        </div>
       </div>
 
       <div className="person-card">
@@ -77,6 +77,11 @@ const About = () => {
       </div>
 
       <div className="person-card">
+        <div className="person-card-box">
+          <img src={VetThree} alt="vetthree" />
+          <br />
+          <small>Veterinarian</small>
+        </div>
         <p className="person-card-desc">
           Hi I'm Tim and I am new recruit here at Animal & Animal First. My
           grandpa used to take me duck hunting when I was a little kid. He was
@@ -86,11 +91,6 @@ const About = () => {
           anatomy. This led me to become a veterinarian and it's been a great
           ride so far.
         </p>
-        <div className="person-card-box">
-          <img src={VetThree} alt="vetthree" />
-          <br />
-          <small>Veterinarian</small>
-        </div>
       </div>
       <h2 className="about-page-title-two">Meet the rest of the Team</h2>
       <div className="team">

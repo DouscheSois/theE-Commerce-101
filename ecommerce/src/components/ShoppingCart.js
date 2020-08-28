@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 
 import { StoreContext } from "../contextAPI/store";
-
-import Bear from "../images/bear.jpg";
+import ShoppingCartAnimalCard from "./ShoppingCartAnimalCard";
 
 const ShoppingCart = () => {
   const [cart, setCart] = useContext(StoreContext);
@@ -12,30 +11,17 @@ const ShoppingCart = () => {
     <div className="shopping-cart-page">
       <h1 className="shopping-cart-page-title">Shopping Cart</h1>
       <div className="basket">
-        <div className="animal-card">
-          <h3>Meet John!</h3>
-          <img className="animal" src={Bear} alt="bear" />
-          <p>
-            John is a Brown Bear. He is 15 years old. He likes to play ball and
-            go fishing at the Californian rivers.
-          </p>
-          <button className="remove-animal" type="button">
-            Remove
-          </button>
-        </div>
+        {cart.map((animal) => (
+          <ShoppingCartAnimalCard
+            key={animal.id}
+            name={animal.name}
+            price={animal.price}
+            desc={animal.desc}
+            img={animal.img}
+          />
+        ))}
       </div>
-      <div className="total">
-        <div className="total-desc">
-          <h1>You've selected John, Congrats!</h1>
-          <hr />
-          <h1>Total:</h1>
-        </div>
-        <div className="total-amount">
-          <h1>$22,000</h1>
-          <hr />
-          <h1>${totalPrice}</h1>
-        </div>
-      </div>
+      <h1 className="total-price">Total: ${totalPrice}</h1>
       <div className="payment">
         <div className="billing-form">
           <h1>Billing Address</h1>
@@ -72,14 +58,14 @@ const ShoppingCart = () => {
           <input type="text" name="state" placeholder="Enter State i.e. CA" />
           <div className="checkbox">
             <input type="checkbox" id="same" />
-            <label for="same">Same as Shipping Address</label>
+            <label htmlFor="same">Same as Shipping Address</label>
           </div>
         </div>
         <div className="payment-form">
           <h1>Payment Information</h1>
-          <label for="cards">Accepted Cards</label>
+          <label htmlFor="cards">Accepted Cards</label>
           <div className="icon-container">
-            <i class="fab fa-cc-visa"></i>
+            <i className="fab fa-cc-visa"></i>
             <i className="fab fa-cc-amex"></i>
             <i className="fab fa-cc-mastercard"></i>
             <i className="fab fa-cc-discover"></i>

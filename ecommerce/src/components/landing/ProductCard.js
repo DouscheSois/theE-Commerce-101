@@ -4,7 +4,7 @@ import { StoreContext } from "../../contextAPI/Store";
 
 import ShoppingCart from "../../images/shopping-cart.png";
 
-export const AnimalCard = ({ animal }) => {
+export const ProductCard = ({ animal }) => {
   const [cart, setCart] = useContext(StoreContext);
 
   let button = useRef();
@@ -28,8 +28,7 @@ export const AnimalCard = ({ animal }) => {
 
   return (
     <div className="animal-card" key={animal.id}>
-      <h3>Meet {animal.name}!</h3>
-      <small>{animal.id}</small>
+      <h3>{animal.name}</h3>
       {animal.img}
       <p>{animal.desc}</p>
       <small className="price">${animal.price}</small>

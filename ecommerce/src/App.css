@@ -22,10 +22,11 @@
 
 /* Landing CSS*/
 .landing-page {
-  background-color: #00adb5;
+  background-color: #4b5320;
 }
 
 .landing-page-title {
+  color: #fff;
   margin: 0;
   padding: 4rem;
   font-size: 2rem;
@@ -44,7 +45,7 @@
 
 .landing-page-desc-1 {
   margin: 0;
-  background-color: red;
+  background-color: beige;
   opacity: 0.8;
   font-size: 1.5rem;
   text-align: center;
@@ -118,7 +119,7 @@
 
 /* About CSS*/
 .about-page {
-  background-color: #00adb5;
+  background-color: #4b5320;
   padding: 1rem;
   width: 80%;
   margin-left: 10%;
@@ -130,6 +131,7 @@
   padding: 1.5rem;
   font-size: 2rem;
   text-align: center;
+  color: #fff;
 }
 
 .about-page-title-two {
@@ -146,6 +148,10 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+.person-card-box small {
+  color: #fff;
 }
 
 .person-card-desc {

@@ -1,120 +1,129 @@
 import React from "react";
 
-import { AnimalCard } from "./AnimalCard";
+import { ProductCard } from "./ProductCard";
 
-import Bear from "../../images/bear.jpg";
-import Kangaroo from "../../images/kangaroo.png";
-import Jaguar from "../../images/jaguar.jpg";
-import Cow from "../../images/cow.png";
-import Koala from "../../images/koala.png";
-import Rabbit from "../../images/rabbit.jpg";
-import Llama from "../../images/llama.png";
-import Whale from "../../images/whale.jpg";
-import Cheetah from "../../images/cheetah.jpg";
-import Dog from "../../images/dog.jpg";
-import Zebra from "../../images/zebra.jpg";
+import Grenade from "../../images/grenade.png";
+import Rifle from "../../images/rifle.png";
+import Chopper from "../../images/chopper.png";
+import FighterJet from "../../images/fighter-jet.png";
+import Backpack from "../../images/backpack.png";
+import Knife from "../../images/knife.png";
+import WalkieTalkie from "../../images/walkie-talkie.png";
+import Helmet from "../../images/helmet.png";
+import MedicalBag from "../../images/medical-bag.png";
+import Boots from "../../images/boots.png";
+import GasMask from "../../images/gas-mask.png";
+import Truck from "../../images/truck.png";
 
 const LandingBody = () => {
   const newID = () => {
     return Math.floor(Math.random() * 1000000030);
   };
 
-  const animalDatabase = [
+  const productDatabase = [
     {
-      id: 1,
-      name: "John",
-      price: 22000,
+      id: newID(),
+      name: "AN/PRC-148",
+      price: 750,
       desc:
-        "John is a Brown Bear. He is 15 years old. He likes to play ball and gofishing at the Californian rivers.",
-      img: <img className="animal" src={Bear} alt="bear" />,
+        "The AN/PRC-148 Multiband Inter/Intra Team Radio (MBITR) is the most widely fielded handheld multiband, tactical software-defined radio, used by NATO forces around the world.",
+      img: <img className="animal" src={WalkieTalkie} alt="walkietalkie" />,
     },
     {
-      id: 2,
-      name: "Steve",
-      price: 25000,
+      id: newID(),
+      name: "STOMP Complete Medical Kit",
+      price: 600,
       desc:
-        "Steve is a good Jaguar. He is 6 years old. He likes to play fetch and play cop and robbers in his spare time.",
-      img: <img className="animal" src={Jaguar} alt="jaguar" />,
+        "The STOMP is a fully stocked mobile military and trauma first aid pack. Ours kits are always packed when you order with over 300 quality items to ensure fresh in date medical gear.",
+      img: <img className="animal" src={MedicalBag} alt="medical-bag" />,
     },
     {
-      id: 3,
-      name: "Ronald",
-      price: 3500,
+      id: newID(),
+      name: "MIRA Safety CM-7M Military Gas Mask ",
+      price: 550,
       desc:
-        "Steve is a good Dog. He is 4 years old. He likes to get on the couch and play in the mud whenever possible.",
-      img: <img className="animal" src={Dog} alt="dog" />,
+        "The CM-7M tactical gas mask is the ultimate chemical, biological, radiological, and nuclear (CBRN) defense system when used in conjunction with suitable filters or breathing apparatus. The military-grade technology used for this full-face respirator provides comprehensive protection against the full spectrum of CBRN agents and toxic industrial chemicals in the form of gases, vapors, and aerosols.",
+      img: <img className="animal" src={GasMask} alt="gasmask" />,
     },
     {
-      id: 4,
-      name: "Aussie",
-      price: 6000,
+      id: newID(),
+      name: "5.11 Tactical RUSH72",
+      price: 250,
       desc:
-        "Aussie is a Kangaroo. She is 4 years old. She likes to dance and go to the Sydney Opera House.",
-      img: <img className="animal" src={Kangaroo} alt="kangaroo" />,
+        "5.11 Tactical is a brand of clothing consisting of uniforms and tactical equipment for military, law enforcement and public safety personnel.",
+      img: <img className="animal" src={Backpack} alt="backpack" />,
     },
     {
-      id: 5,
-      name: "Grandma",
+      id: newID(),
+      name: "Garmont Men's T8 Bifida",
+      price: 350,
+      desc:
+        "Unsurpassed confront accomplished with the PU Breathable Footbed, and the EVA insole. Zero optical refraction hardware at the instep for flawless performance in all operating environments.",
+      img: <img className="animal" src={Boots} alt="boot" />,
+    },
+    {
+      id: newID(),
+      name: "OPS-CORE FAST XP HIGH CUT HELMET",
       price: 3000,
       desc:
-        "Grandma is a beautiful Cow. She is 30 years old. She likes hugs and likes to play with the young calves. She is still full of energy.",
-      img: <img className="animal" src={Cow} alt="cow" />,
+        "The Ops-Core Future Assault Shell Technology (FAST) Helmet, is a combat helmet that is used by special forces units seeking to use an alternative headgear while trading some ballistic protection for comfortable headwear to use.",
+      img: <img className="animal" src={Helmet} alt="helmet" />,
     },
     {
-      id: 6,
-      name: "Tommy",
-      price: 5000,
+      id: newID(),
+      name: "Ka-Bar 1220",
+      price: 400,
       desc:
-        "Tommy is a Koala Bear. He is 8 years old. He likes to climb trees and move in slow motion to the music.",
-      img: <img className="animal" src={Koala} alt="koala" />,
+        "The combat knife is a fighting knife designed solely for military use and primarily intended for hand-to-hand or close combat fighting.",
+      img: <img className="animal" src={Knife} alt="knife" />,
     },
     {
-      id: 7,
-      name: "Dory",
+      id: newID(),
+      name: "M67 Grenade x 100",
       price: 1000,
       desc:
-        "Dory is a Rabbit. She is 4 years old. She likes to to healthy and jump around when the music is on.",
-      img: <img className="animal" src={Rabbit} alt="rabbit" />,
+        "The M67 grenade is a fragmentation hand grenade used by the United States military. The M67 grenade has a spheroidal steel body that contains 6.5 oz of composition B explosive.",
+      img: <img className="animal" src={Grenade} alt="grenade" />,
     },
     {
-      id: 8,
-      name: "Tina",
-      price: 7000,
+      id: newID(),
+      name: "M16 rifle",
+      price: 5500,
       desc:
-        "Tina is a Llama. She is 12 years old. She likes to go on hikes and likes to compete in spitting contests.",
-      img: <img className="animal" src={Llama} alt="llama" />,
+        "The M16 rifle is a family of military rifles adapted from the ArmaLite AR-15 rifle for the United States military.",
+      img: <img className="animal" src={Rifle} alt="rifle" />,
     },
     {
-      id: 9,
-      name: "Maia",
-      price: 120000,
+      id: newID(),
+      name: "7000-MV GTT ",
+      price: 850000,
       desc:
-        "Maia is a Blue Whale. She is 45 years old. She likes to swim and follow cruises around the world.",
-      img: <img className="animal" src={Whale} alt="whale" />,
+        "The 7000-MV GTT is ideal for off-road missions as a hauler of heavy-duty material or converted to heavily armored personnel carrier. These trucks offer high commonality among variants and are easily adapted to suit the mission. ",
+      img: <img className="animal" src={Truck} alt="truck" />,
     },
     {
-      id: 10,
-      name: "Jerry",
-      price: 7000,
+      id: newID(),
+      name: "OH-58D Kiowa Warrior",
+      price: 5000000,
       desc:
-        "Jerry is a Zebra. He is 10 years old. He likes to paint and be in nature relaxing eating grass.",
-      img: <img className="animal" src={Zebra} alt="zebra" />,
+        "The Bell OH-58 Kiowa is a family of single-engine, single-rotor, military helicopters used for observation, utility, and direct fire support.",
+      img: <img className="animal" src={Chopper} alt="chopper" />,
     },
     {
-      id: 11,
-      name: "Luke",
-      price: 10000,
+      id: newID(),
+      name: "Lockheed Martin F-35A Lightning II",
+      price: 80000000,
       desc:
-        "Luke is a Cheetah. He is 4 years old. He likes to play tag and wrestle the other animals, even Maia!",
-      img: <img className="animal" src={Cheetah} alt="cheetah" />,
+        "The Lockheed Martin F-35 Lightning II is an American family of single-seat, single-engine, all-weather stealth multirole combat aircraft that is intended to perform both air superiority and strike missions.",
+      img: <img className="animal" src={FighterJet} alt="fighterjet" />,
     },
   ];
 
   return (
     <div className="landing-body">
       <div className="animal-cards">
-        {animalDatabase.map((animal) => (
-          <AnimalCard key={animal.id} animal={animal} />
+        {productDatabase.map((animal) => (
+          <ProductCard key={animal.id} animal={animal} />
         ))}
       </div>
     </div>

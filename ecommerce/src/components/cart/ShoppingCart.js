@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 
 import { StoreContext } from "../../contextAPI/Store";
 import ShoppingCartAnimalCard from "./ShoppingCartAnimalCard";
@@ -94,9 +95,11 @@ const ShoppingCart = () => {
         </div>
       </div>
       <div className="submit">
-        <button className="submit-button" type="button">
-          Purchase
-        </button>
+        <div className="confirmation">
+          <Link to="/confirmation" className="confirmation-link">
+            Purchase
+          </Link>
+        </div>
       </div>
     </div>
   );

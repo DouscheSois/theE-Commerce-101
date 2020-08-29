@@ -10,7 +10,6 @@ const ShoppingCartAnimalCard = ({ animal }) => {
   return (
     <div className="animal-card" key={animal.key}>
       <h3>{animal.name}</h3>
-      <small>{animal.key}</small>
       {animal.img}
       <p>{animal.desc}</p>
       <small className="price">${animal.price}</small>

@@ -1,18 +1,21 @@
 /* Navbar CSS*/
 .navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
   background-color: #333;
-  padding: 2.5rem;
   text-align: right;
   position: sticky;
   top: 0;
   z-index: 1;
+  opacity: 0.8;
 }
 
 .nav-links {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
-  padding: 2.5rem;
+  padding: 3rem;
 }
 
 .nav-links:hover {
@@ -334,10 +337,8 @@
 
 @media (max-width: 700px) {
   .navbar {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: static;
   }
 
   .about-page {
@@ -365,6 +366,8 @@
   }
 
   .footnote {
+    font-size: 0.8rem;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }

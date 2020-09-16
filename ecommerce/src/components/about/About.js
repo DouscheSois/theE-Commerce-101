@@ -24,10 +24,10 @@ const About = () => {
         </div>
         <p className="person-card-desc">
           Hi, I'm Mark and I love the military. My mission is to help bring
-          awareness about the dangers in the world. No one can be 100% safe
-          anymore. My priority is to empower the average citizen with
-          gear/vehicle/weapons that can protect them and their family to the
-          highest level possible.
+          awareness about the dangers of not being properly defensively
+          equipped. No one can be 100% safe anymore. My priority is to empower
+          the average citizen with gear/vehicle/weapons that can protect them
+          and their family to the highest level possible.
         </p>
       </div>
       <div className="person-card">

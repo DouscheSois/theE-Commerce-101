@@ -10,7 +10,7 @@ Live Link = https://themilitarystore.herokuapp.com/
 <hr />
 
 <h3>Summary</h3>
-I built this app because I wanted to try my hands out and create the frontend of an e-commerce site. I enjoyed building this app because I've never built anything of the sort. I am looking forward to the challenge in building a full stack e-commerce store. For now, I am satisfied with this project becuase it helped me solified my skills using React hooks and the context API.
+I built this app because I wanted to try my hands out and create the frontend of an e-commerce site. I enjoyed building this app because I've never built anything of the sort. I am looking forward to the challenge in building a full stack e-commerce store. For now, I am satisfied with this project because it helped me understand more about using React hooks and the context API.
 
 <h3>Author</h3>
 
